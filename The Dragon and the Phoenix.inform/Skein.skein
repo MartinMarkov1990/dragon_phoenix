@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skein rootNode="node-30">
+  <generator>Windows Inform 7 6M62</generator>
+  <activeNode nodeId="node-124"/>
+  <item nodeId="node-30">
+    <command xml:space="preserve">The Dragon and the Phoenix</command>
+    <result xml:space="preserve">The Dragon and the Phoenix&#x000A;An Interactive Fiction by Martin Markov&#x000A;Release 1 / Serial number 180903 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Park&#x000A;You've been tugging at the end of your leash, but Mom's been holding you back the whole way.  Finally, you've reached the park. It is a beautiful day with neary a cloud roaming in the sky, and the park is full with people and other dogs.&#x000A;&#x000A;Mom pulls out your favourite chewed out tennis ball, and throws it. "Go fetch the ball, Dragon!". The tennis ball rolls next to a large tree.&#x000A;&#x000A;Mom is waiting for you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-31"/>
+      <child nodeId="node-34"/>
+      <child nodeId="node-115"/>
+      <child nodeId="node-123"/>
+    </children>
+  </item>
+  <item nodeId="node-31">
+    <command xml:space="preserve">fetch ball</command>
+    <result xml:space="preserve">"Now give me the ball, Dragon!"&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-32"/>
+      <child nodeId="node-119"/>
+      <child nodeId="node-122"/>
+    </children>
+  </item>
+  <item nodeId="node-32">
+    <command xml:space="preserve">get ball</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-33"/>
+    </children>
+  </item>
+  <item nodeId="node-33">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Park&#x000A;You've been tugging at the end of your leash, but Mom's been holding you back  the whole way.  Finally, you've reached the park. It is a beautiful day with neary a cloud roaming in the sky, and the park is full with people and other dogs. Mom pulls out your favourite chewed out tennis ball, and throws it. "Go fetch the ball, Dragon!"&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-119">
+    <command xml:space="preserve">take ball</command>
+    <result xml:space="preserve">"Now give me the ball, Dragon!"&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-120"/>
+    </children>
+  </item>
+  <item nodeId="node-120">
+    <command xml:space="preserve">give ball to mom</command>
+    <result xml:space="preserve">Mom doesn't seem interested.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-122">
+    <command xml:space="preserve">give ball to mom</command>
+    <result xml:space="preserve">Mom doesn't seem interested.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-34">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Park&#x000A;It is a beautiful day with neary a cloud roaming in the sky, and the park is full with people and other dogs.&#x000A;&#x000A;Your favourite ball is sitting next to a large tree.&#x000A;&#x000A;Mom is waiting for you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-35"/>
+      <child nodeId="node-121"/>
+    </children>
+  </item>
+  <item nodeId="node-35">
+    <command xml:space="preserve">take ball</command>
+    <result xml:space="preserve">"Now give me the ball, Dragon!"&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-36"/>
+      <child nodeId="node-38"/>
+      <child nodeId="node-114"/>
+    </children>
+  </item>
+  <item nodeId="node-36">
+    <command xml:space="preserve">look tree</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-37"/>
+    </children>
+  </item>
+  <item nodeId="node-37">
+    <command xml:space="preserve">showme</command>
+    <result xml:space="preserve">Park - room&#x000A;    yourself - person&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-38">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Park&#x000A;It is a beautiful day with neary a cloud roaming in the sky, and the park is full with people and other dogs.&#x000A;&#x000A;You can see Mom here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-39"/>
+    </children>
+  </item>
+  <item nodeId="node-39">
+    <command xml:space="preserve">give ball to Mom</command>
+    <result xml:space="preserve">Mom doesn't seem interested.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-40"/>
+    </children>
+  </item>
+  <item nodeId="node-40">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Park&#x000A;It is a beautiful day with neary a cloud roaming in the sky, and the park is full with people and other dogs.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-114">
+    <command xml:space="preserve">give ball to mom</command>
+    <result xml:space="preserve">Mom doesn't seem interested.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-121">
+    <command xml:space="preserve">fetch ball</command>
+    <result xml:space="preserve">I only understood you as far as wanting to fetch.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-115">
+    <command xml:space="preserve">get ball</command>
+    <result xml:space="preserve">"Now give me the ball, Dragon!"&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-116"/>
+      <child nodeId="node-118"/>
+    </children>
+  </item>
+  <item nodeId="node-116">
+    <command xml:space="preserve">give ball to Mom</command>
+    <result xml:space="preserve">Mom doesn't seem interested.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-117"/>
+    </children>
+  </item>
+  <item nodeId="node-117">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Park&#x000A;It is a beautiful day with neary a cloud roaming in the sky, and the park is full with people and other dogs.&#x000A;&#x000A;You can see Mom here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-118">
+    <command xml:space="preserve">give ball to mom</command>
+    <result xml:space="preserve">Mom doesn't seem interested.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-123">
+    <command xml:space="preserve">fetch the ball</command>
+    <result xml:space="preserve">"Now give me the ball, Dragon!"&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-124"/>
+    </children>
+  </item>
+  <item nodeId="node-124">
+    <command xml:space="preserve">give the ball to mom</command>
+    <result xml:space="preserve">Mom doesn't seem interested.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+</Skein>
