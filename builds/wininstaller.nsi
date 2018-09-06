@@ -1,4 +1,8 @@
 ; Installer-creator for a Glulx game file.
+; All the installation stuff taken from sites:
+;   http://www.ifwiki.org/index.php/How_to_distribute_Inform_Glulx_games_as_standalone_apps
+;   http://nsis.sourceforge.net/Main_Page
+;   https://eblong.com/zarf/glk/wininstaller.nsi
 ; To use: makensis -v3 wininstaller.nsi
 
 !include MUI2.nsh
