@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-126">
   <generator>Windows Inform 7 6M62</generator>
-  <activeNode nodeId="node-197"/>
+  <activeNode nodeId="node-297"/>
   <item nodeId="node-126">
     <command xml:space="preserve">The Dragon and the Phoenix</command>
-    <result xml:space="preserve">The Dragon and the Phoenix&#x000A;An Interactive Fiction by Martin Markov&#x000A;Release 1 / Serial number 180905 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Park&#x000A;You've been tugging at the end of your leash, but Mom's been holding you back the whole way.  Finally, you've reached the park. It is a beautiful day with neary a cloud roaming in the sky, and the park is full with people and other dogs.&#x000A;&#x000A;Mom pulls out your favourite chewed out tennis ball, and throws it. "Go fetch the ball, Drake!". The tennis ball rolls next to a large tree.&#x000A;&#x000A;Mom is waiting for you.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">The Dragon and the Phoenix&#x000A;An Interactive Fiction by Martin Markov&#x000A;Release 1 / Serial number 180906 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Park&#x000A;You've been tugging at the end of your leash, but Mom's been holding you back the whole way.  Finally, you've reached the park. It is a beautiful day with neary a cloud roaming in the sky, and the park is full with people and other dogs.&#x000A;&#x000A;Mom pulls out your favourite chewed out tennis ball, and throws it. "Go fetch the ball, Drake!". The tennis ball rolls next to a large tree.&#x000A;&#x000A;Mom is waiting for you.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -13,11 +13,15 @@
       <child nodeId="node-142"/>
       <child nodeId="node-146"/>
       <child nodeId="node-191"/>
+      <child nodeId="node-206"/>
+      <child nodeId="node-236"/>
+      <child nodeId="node-277"/>
+      <child nodeId="node-291"/>
     </children>
   </item>
   <item nodeId="node-127">
     <command xml:space="preserve">fetch ball</command>
-    <result xml:space="preserve">"Now give me the ball, Dragon!"&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">"Now give me the ball, Drake!"&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>YES</changed>
     <children>
@@ -58,18 +62,64 @@
   </item>
   <item nodeId="node-132">
     <command xml:space="preserve">give ball to mom</command>
-    <result xml:space="preserve">Mom doesn't seem interested.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">"Good Boy!", says Mom, and gives you a treat. You gulp it immediately and wag your tail in delight&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-231"/>
+    </children>
+  </item>
+  <item nodeId="node-231">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">You played in the park for hours, dashing around the people and chasing the other dogs. When Mom finally brought you home, you were so tired you were not even able to have your dinner. You just fell in your bed in the flat's corridor, and doze off.&#x000A;&#x000A;Tavern&#x000A;In your sleep, you try rolling around in your bed. It feels surprusingly hard, and you wake up startled, next to a lit fireplace. You are in a large room with several long wooden tables with benches, and a bar. A large oaken log is slowly burning in the fireplace, producing more heat than light. Shadows dance around the room, barely lighting the faces of the people here. &#x000A;&#x000A;A surly, bald man stands behind the bar, absent-mindedly washing a glass with an extremely dirty cloth.&#x000A;&#x000A;A tall man wearing a long, gray cloak and eyepatch is sitting, cross-legged, next to the fire. He is carrying a long staff. Many silver hairs shimmer in his otherwise dark beard. A raven is sitting on his shoulder.&#x000A;&#x000A;You can also see the front door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-232"/>
+    </children>
+  </item>
+  <item nodeId="node-232">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Tavern&#x000A;You are in a large room with several long wooden tables with benches, and a bar. A large oaken log is slowly burning in the fireplace, producing more heat than light. Shadows dance around the room, barely lighting the faces of the people here. &#x000A;&#x000A;A surly, bald man stands behind the bar, absent-mindedly washing a glass with an extremely dirty cloth.&#x000A;&#x000A;A tall man wearing a long, gray cloak and eyepatch is sitting, cross-legged, next to the fire. He is carrying a long staff. Many silver hairs shimmer in his otherwise dark beard. A raven is sitting on his shoulder.&#x000A;&#x000A;You can also see the front door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-233"/>
+    </children>
+  </item>
+  <item nodeId="node-233">
+    <command xml:space="preserve">look at stranger</command>
+    <result xml:space="preserve">You see nothing special about the stranger.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-234"/>
+    </children>
+  </item>
+  <item nodeId="node-234">
+    <command xml:space="preserve">look at barkeep</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-235"/>
+    </children>
+  </item>
+  <item nodeId="node-235">
+    <command xml:space="preserve">look at barkeeper</command>
+    <result xml:space="preserve">You see nothing special about the tavern keeper.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
   <item nodeId="node-133">
     <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Park&#x000A;It is a beautiful day with neary a cloud roaming in the sky, and the park is full with people and other dogs.&#x000A;&#x000A;Your favourite ball is sitting next to a large tree.&#x000A;&#x000A;Mom is waiting for you.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Tavern&#x000A;You are in a large room with several long wooden tables with benches, and a bar. A large oaken log is slowly burning in the fireplace, producing more heat than light. Shadows dance around the room, barely lighting the faces of the people here. &#x000A;&#x000A;A surly, bald man stands behind the bar, absent-mindedly washing a glass with an extremely dirty cloth.&#x000A;&#x000A;A tall man wearing a long, gray cloak and eyepatch is sitting, cross-legged, next to the fire. He is carrying a long staff. Many silver hairs shimmer in his otherwise dark beard. A raven is sitting on his shoulder.&#x000A;&#x000A;You can also see a front door and a raven here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <children>
       <child nodeId="node-134"/>
       <child nodeId="node-141"/>
+      <child nodeId="node-202"/>
     </children>
   </item>
   <item nodeId="node-134">
@@ -132,9 +182,10 @@
     <command xml:space="preserve">fetch ball</command>
     <result xml:space="preserve">"Now give me the ball, Drake!"&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>YES</changed>
+    <changed>NO</changed>
     <children>
       <child nodeId="node-189"/>
+      <child nodeId="node-198"/>
     </children>
   </item>
   <item nodeId="node-189">
@@ -149,6 +200,72 @@
   <item nodeId="node-190">
     <command xml:space="preserve">inv</command>
     <result xml:space="preserve">You are carrying:&#x000A;  a ball&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-198">
+    <command xml:space="preserve">give ball to momo</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-199"/>
+    </children>
+  </item>
+  <item nodeId="node-199">
+    <command xml:space="preserve">give ball to mom</command>
+    <result xml:space="preserve">"Good Boy!", says Mom, and gives you a treat. You gulp it immediately and wag your tail in delight&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-200"/>
+    </children>
+  </item>
+  <item nodeId="node-200">
+    <command xml:space="preserve">talk to mom</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-201"/>
+    </children>
+  </item>
+  <item nodeId="node-201">
+    <command xml:space="preserve">bark at mom</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-202">
+    <command xml:space="preserve">look at bald man</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-203"/>
+    </children>
+  </item>
+  <item nodeId="node-203">
+    <command xml:space="preserve">look at tavern keeper</command>
+    <result xml:space="preserve">You see nothing special about the tavern keeper.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-204"/>
+    </children>
+  </item>
+  <item nodeId="node-204">
+    <command xml:space="preserve">look at stranger</command>
+    <result xml:space="preserve">You see nothing special about the stranger.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-205"/>
+    </children>
+  </item>
+  <item nodeId="node-205">
+    <command xml:space="preserve">take staff from stranger</command>
+    <result xml:space="preserve">That seems to belong to the stranger.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -255,6 +372,571 @@
   <item nodeId="node-197">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Park&#x000A;It is a beautiful day with neary a cloud roaming in the sky, and the park is full with people and other dogs.&#x000A;&#x000A;Mom is waiting for you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-206">
+    <command xml:space="preserve">open front door</command>
+    <result xml:space="preserve">You open the front door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-207"/>
+    </children>
+  </item>
+  <item nodeId="node-207">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">front lawn&#x000A;You can see the front door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-208"/>
+    </children>
+  </item>
+  <item nodeId="node-208">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">front lawn&#x000A;You can see the front door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-236">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">You played in the park for hours, dashing around the people and chasing the other dogs. When Mom finally brought you home, you were so tired you were not even able to have your dinner. You just fell in your bed in the flat's corridor, and doze off.&#x000A;&#x000A;Tavern&#x000A;In your sleep, you try rolling around in your bed. It feels surprusingly hard, and you wake up startled, next to a lit fireplace. You are in a large room with several long wooden tables with benches, and a bar. A large oaken log is slowly burning in the fireplace, producing more heat than light. Shadows dance around the room, barely lighting the faces of the people here. &#x000A;&#x000A;Next to the far side of the bar, on the west side of the tavern, there is a green door with a circular window, apparently leading to the garden.&#x000A;&#x000A;A door made out of brown logs held together by metal rings is on the south wall. The coat rack and the welcome mat next to it suggest it is the front door.&#x000A;&#x000A;A surly, bald man stands behind the bar, absent-mindedly washing a glass with an extremely dirty cloth.&#x000A;&#x000A;A tall man wearing a long, gray cloak and eyepatch is sitting, cross-legged, next to the fire. He is carrying a long staff. Many silver hairs shimmer in his otherwise dark beard. A raven is sitting on his shoulder.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-237"/>
+      <child nodeId="node-250"/>
+      <child nodeId="node-252"/>
+      <child nodeId="node-257"/>
+      <child nodeId="node-263"/>
+    </children>
+  </item>
+  <item nodeId="node-237">
+    <command xml:space="preserve">play</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-238"/>
+    </children>
+  </item>
+  <item nodeId="node-238">
+    <command xml:space="preserve">examine barkeep</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-239"/>
+    </children>
+  </item>
+  <item nodeId="node-239">
+    <command xml:space="preserve">examine barkeeper</command>
+    <result xml:space="preserve">You see nothing special about the tavern keeper.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-240"/>
+    </children>
+  </item>
+  <item nodeId="node-240">
+    <command xml:space="preserve">examine tall man</command>
+    <result xml:space="preserve">You see nothing special about the stranger.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-241"/>
+    </children>
+  </item>
+  <item nodeId="node-241">
+    <command xml:space="preserve">wave at tall man</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-242"/>
+    </children>
+  </item>
+  <item nodeId="node-242">
+    <command xml:space="preserve">wave tall man</command>
+    <result xml:space="preserve">But you aren't holding him.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-243"/>
+    </children>
+  </item>
+  <item nodeId="node-243">
+    <command xml:space="preserve">wave hands at tall man</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-244"/>
+    </children>
+  </item>
+  <item nodeId="node-244">
+    <command xml:space="preserve">wave hands tall man</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-245"/>
+    </children>
+  </item>
+  <item nodeId="node-245">
+    <command xml:space="preserve">wave hands strange</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-246"/>
+    </children>
+  </item>
+  <item nodeId="node-246">
+    <command xml:space="preserve">wave stranger</command>
+    <result xml:space="preserve">But you aren't holding him.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-247"/>
+    </children>
+  </item>
+  <item nodeId="node-247">
+    <command xml:space="preserve">wave hands</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-248"/>
+    </children>
+  </item>
+  <item nodeId="node-248">
+    <command xml:space="preserve">wave</command>
+    <result xml:space="preserve">You wave.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-249"/>
+    </children>
+  </item>
+  <item nodeId="node-249">
+    <command xml:space="preserve">x me</command>
+    <result xml:space="preserve">As good-looking as ever.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-250">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">(first opening the front door)&#x000A;&#x000A;front lawn&#x000A;A door made out of brown logs held together by metal rings is on the south wall. The coat rack and the welcome mat next to it suggest it is the front door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-251"/>
+    </children>
+  </item>
+  <item nodeId="node-251">
+    <command xml:space="preserve">time</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-252">
+    <command xml:space="preserve">look at barkeep</command>
+    <result xml:space="preserve">You see nothing special about the tavern keeper.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-253"/>
+    </children>
+  </item>
+  <item nodeId="node-253">
+    <command xml:space="preserve">look at tall man</command>
+    <result xml:space="preserve">You see nothing special about the stranger.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-254"/>
+    </children>
+  </item>
+  <item nodeId="node-254">
+    <command xml:space="preserve">look at front door</command>
+    <result xml:space="preserve">You see nothing special about the front door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-255"/>
+    </children>
+  </item>
+  <item nodeId="node-255">
+    <command xml:space="preserve">open front door</command>
+    <result xml:space="preserve">You open the front door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-256"/>
+    </children>
+  </item>
+  <item nodeId="node-256">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">front lawn&#x000A;Outside the tavern, you see it is a large building painted white, with a red roof and a small brick chimney.&#x000A;There is a large empty space on which several carts are parked.&#x000A;A wide dirt road stretches in front of you. To the east a large statue towers in the middle of the village square with. To the west you can see a tall metal fence surrounding a number of graves overgrown with ivy, with a mausoleum made of white stone in the back of it.&#x000A;&#x000A;A door made out of brown logs held together by metal rings is on the south wall. The coat rack and the welcome mat next to it suggest it is the front door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-257">
+    <command xml:space="preserve">go to garden</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-258"/>
+    </children>
+  </item>
+  <item nodeId="node-258">
+    <command xml:space="preserve">open green door</command>
+    <result xml:space="preserve">You open the green door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-259"/>
+    </children>
+  </item>
+  <item nodeId="node-259">
+    <command xml:space="preserve">open green door</command>
+    <result xml:space="preserve">That's already open.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-260"/>
+    </children>
+  </item>
+  <item nodeId="node-260">
+    <command xml:space="preserve">west</command>
+    <result xml:space="preserve">Garden&#x000A;A number of sickly-looking vegetables grow around in the garden of the tarven. A huge rose bush grows next to the wall of the tavern. A dinky door blocks a trail into the hill behind the tavern.&#x000A;&#x000A;Next to the far side of the bar, on the west side of the tavern, there is a green door with a circular window, apparently leading to the garden.&#x000A;&#x000A;You can also see a dinky door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-261"/>
+    </children>
+  </item>
+  <item nodeId="node-261">
+    <command xml:space="preserve">east</command>
+    <result xml:space="preserve">Tavern&#x000A;You are in a large room with several long wooden tables with benches, and a bar. A large oaken log is slowly burning in the fireplace, producing more heat than light. Shadows dance around the room, barely lighting the faces of the people here. &#x000A;&#x000A;Next to the far side of the bar, on the west side of the tavern, there is a green door with a circular window, apparently leading to the garden.&#x000A;&#x000A;A door made out of brown logs held together by metal rings is on the south wall. The coat rack and the welcome mat next to it suggest it is the front door.&#x000A;&#x000A;A surly, bald man stands behind the bar, absent-mindedly washing a glass with an extremely dirty cloth.&#x000A;&#x000A;A tall man wearing a long, gray cloak and eyepatch is sitting, cross-legged, next to the fire. He is carrying a long staff. Many silver hairs shimmer in his otherwise dark beard. A raven is sitting on his shoulder.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-262"/>
+    </children>
+  </item>
+  <item nodeId="node-262">
+    <command xml:space="preserve">south</command>
+    <result xml:space="preserve">(first opening the front door)&#x000A;&#x000A;front lawn&#x000A;Outside the tavern, you see it is a large building painted white, with a red roof and a small brick chimney.&#x000A;There is a large empty space on which several carts are parked.&#x000A;A wide dirt road stretches in front of you. To the east a large statue towers in the middle of the village square with. To the west you can see a tall metal fence surrounding a number of graves overgrown with ivy, with a mausoleum made of white stone in the back of it.&#x000A;&#x000A;A door made out of brown logs held together by metal rings is on the south wall.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-263">
+    <command xml:space="preserve">south</command>
+    <result xml:space="preserve">(first opening the front door)&#x000A;&#x000A;front lawn&#x000A;Outside the tavern, you see it is a large building painted white, with a red roof and a small brick chimney.&#x000A;There is a large empty space on which several carts are parked.&#x000A;A wide dirt road stretches in front of you. To the east a large statue towers in the middle of the village square with. To the west you can see a tall metal fence surrounding a number of graves overgrown with ivy, with a mausoleum made of white stone in the back of it.&#x000A;&#x000A;A door made out of brown logs held together by metal rings is on the wall of the Tavern.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-264"/>
+    </children>
+  </item>
+  <item nodeId="node-264">
+    <command xml:space="preserve">north</command>
+    <result xml:space="preserve">Tavern&#x000A;You are in a large room with several long wooden tables with benches, and a bar. A large oaken log is slowly burning in the fireplace, producing more heat than light. Shadows dance around the room, barely lighting the faces of the people here. &#x000A;&#x000A;A door made out of brown logs held together by metal rings is on the south wall. The coat rack and the welcome mat next to it suggest it is the front door.&#x000A;&#x000A;Next to the far side of the bar, on the west side of the tavern, there is a green door with a circular window, apparently leading to the garden.&#x000A;&#x000A;A surly, bald man stands behind the bar, absent-mindedly washing a glass with an extremely dirty cloth.&#x000A;&#x000A;A tall man wearing a long, gray cloak and eyepatch is sitting, cross-legged, next to the fire. He is carrying a long staff. Many silver hairs shimmer in his otherwise dark beard. A raven is sitting on his shoulder.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-265"/>
+    </children>
+  </item>
+  <item nodeId="node-265">
+    <command xml:space="preserve">west</command>
+    <result xml:space="preserve">(first opening the green door)&#x000A;&#x000A;Garden&#x000A;A number of sickly-looking vegetables grow around in the garden of the tarven. A huge rose bush grows next to the wall of the tavern. A dinky door blocks a trail into the hill behind the tavern.&#x000A;&#x000A;Through the green door's window you can see the tavern keeper still "cleaning" the same glass.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-266"/>
+    </children>
+  </item>
+  <item nodeId="node-266">
+    <command xml:space="preserve">open dinky door</command>
+    <result xml:space="preserve">You open the dinky door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-267"/>
+    </children>
+  </item>
+  <item nodeId="node-267">
+    <command xml:space="preserve">north</command>
+    <result xml:space="preserve">Hill&#x000A;You stand amid the golden wheat at the top of the hill. You can see the tavern's red roof, and the door to its garden. To the north, you can see a trail leading off into the mountains. To the west you see a forest in the distance.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-268"/>
+    </children>
+  </item>
+  <item nodeId="node-268">
+    <command xml:space="preserve">west</command>
+    <result xml:space="preserve">forest entrance&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-269"/>
+    </children>
+  </item>
+  <item nodeId="node-269">
+    <command xml:space="preserve">east</command>
+    <result xml:space="preserve">Hill&#x000A;You stand amid the golden wheat at the top of the hill. You can see the tavern's red roof, and the door to its garden. To the north, you can see a trail leading off into the mountains. To the west you see a forest in the distance.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-270"/>
+    </children>
+  </item>
+  <item nodeId="node-270">
+    <command xml:space="preserve">north</command>
+    <result xml:space="preserve">mountain trail&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-271"/>
+    </children>
+  </item>
+  <item nodeId="node-271">
+    <command xml:space="preserve">south</command>
+    <result xml:space="preserve">Hill&#x000A;You stand amid the golden wheat at the top of the hill. You can see the tavern's red roof, and the door to its garden. To the north, you can see a trail leading off into the mountains. To the west you see a forest in the distance.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-272"/>
+    </children>
+  </item>
+  <item nodeId="node-272">
+    <command xml:space="preserve">south</command>
+    <result xml:space="preserve">Garden&#x000A;A number of sickly-looking vegetables grow around in the garden of the tarven. A huge rose bush grows next to the wall of the tavern. A dinky door blocks a trail into the hill behind the tavern.&#x000A;&#x000A;Through the green door's window you can see the tavern keeper still "cleaning" the same glass.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-273"/>
+    </children>
+  </item>
+  <item nodeId="node-273">
+    <command xml:space="preserve">east</command>
+    <result xml:space="preserve">Tavern&#x000A;You are in a large room with several long wooden tables with benches, and a bar. A large oaken log is slowly burning in the fireplace, producing more heat than light. Shadows dance around the room, barely lighting the faces of the people here. &#x000A;&#x000A;Next to the far side of the bar, on the west side of the tavern, there is a green door with a circular window, apparently leading to the garden.&#x000A;&#x000A;A door made out of brown logs held together by metal rings is on the south wall. The coat rack and the welcome mat next to it suggest it is the front door.&#x000A;&#x000A;A surly, bald man stands behind the bar, absent-mindedly washing a glass with an extremely dirty cloth.&#x000A;&#x000A;A tall man wearing a long, gray cloak and eyepatch is sitting, cross-legged, next to the fire. He is carrying a long staff. Many silver hairs shimmer in his otherwise dark beard. A raven is sitting on his shoulder.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-274"/>
+    </children>
+  </item>
+  <item nodeId="node-274">
+    <command xml:space="preserve">south</command>
+    <result xml:space="preserve">front lawn&#x000A;Outside the tavern, you see it is a large building painted white, with a red roof and a small brick chimney.&#x000A;There is a large empty space on which several carts are parked.&#x000A;A wide dirt road stretches in front of you. To the east a large statue towers in the middle of the village square with. To the west you can see a tall metal fence surrounding a number of graves overgrown with ivy, with a mausoleum made of white stone in the back of it.&#x000A;&#x000A;A door made out of brown logs held together by metal rings is on the wall of the Tavern.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-275"/>
+    </children>
+  </item>
+  <item nodeId="node-275">
+    <command xml:space="preserve">west</command>
+    <result xml:space="preserve">graveyard entrance&#x000A;You can see a metal door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-276"/>
+    </children>
+  </item>
+  <item nodeId="node-276">
+    <command xml:space="preserve">open metal door</command>
+    <result xml:space="preserve">It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-277">
+    <command xml:space="preserve">x me</command>
+    <result xml:space="preserve">Your coat is black, soft and shiny. Your paws are soft, smooth and agile. Your claws are white and neat, since Mom insists on cutting them for you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-278"/>
+    </children>
+  </item>
+  <item nodeId="node-278">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">You played in the park for hours, dashing around the people and chasing the other dogs. When Mom finally brought you home, you were so tired you were not even able to have your dinner. You just fell in your bed in the flat's corridor, and doze off.&#x000A;&#x000A;Tavern&#x000A;In your sleep, you try rolling around in your bed. It feels surprusingly hard, and you wake up startled, next to a lit fireplace. You are in a large room with several long wooden tables with benches, and a bar. A large oaken log is slowly burning in the fireplace, producing more heat than light. Shadows dance around the room, barely lighting the faces of the people here. &#x000A;&#x000A;Next to the far side of the bar, on the west side of the tavern, there is a green door with a circular window, apparently leading to the garden.&#x000A;&#x000A;A door made out of brown logs held together by metal rings is on the south wall. The coat rack and the welcome mat next to it suggest it is the front door.&#x000A;&#x000A;A surly, bald man stands behind the bar, absent-mindedly washing a glass with an extremely dirty cloth.&#x000A;&#x000A;A tall man wearing a long, gray cloak and eyepatch is sitting, cross-legged, next to the fire. He is carrying a long staff. Many silver hairs shimmer in his otherwise dark beard. A raven is sitting on his shoulder.&#x000A;&#x000A;Above the fireplace hangs a peculiar engraving of a bird that appears to be on fire. You notice that occasionally the tall man throws a look at it and appears very thoughtful.&#x000A;&#x000A;You can also see a claw, heart, ash and wing here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-279"/>
+    </children>
+  </item>
+  <item nodeId="node-279">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Tavern&#x000A;You are in a large room with several long wooden tables with benches, and a bar. A large oaken log is slowly burning in the fireplace, producing more heat than light. Shadows dance around the room, barely lighting the faces of the people here. &#x000A;&#x000A;Next to the far side of the bar, on the west side of the tavern, there is a green door with a circular window, apparently leading to the garden.&#x000A;&#x000A;A door made out of brown logs held together by metal rings is on the south wall. The coat rack and the welcome mat next to it suggest it is the front door.&#x000A;&#x000A;A surly, bald man stands behind the bar, absent-mindedly washing a glass with an extremely dirty cloth.&#x000A;&#x000A;A tall man wearing a long, gray cloak and eyepatch is sitting, cross-legged, next to the fire. He is carrying a long staff. Many silver hairs shimmer in his otherwise dark beard. A raven is sitting on his shoulder.&#x000A;&#x000A;Above the fireplace hangs a peculiar engraving of a bird that appears to be on fire. You notice that occasionally the tall man throws a look at it and appears very thoughtful.&#x000A;&#x000A;You can also see a claw, heart, ash and wing here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-280"/>
+    </children>
+  </item>
+  <item nodeId="node-280">
+    <command xml:space="preserve">take wing</command>
+    <result xml:space="preserve">The wing is suddenly picked up by a gust of wind. It floats in the air, until landing softly on your back. You feel it splitting in two, and attaching the halves behind your shoulder plates. The process is not painful, takes only a couple of minutes, and then you feel lighter.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-281"/>
+    </children>
+  </item>
+  <item nodeId="node-281">
+    <command xml:space="preserve">x me</command>
+    <result xml:space="preserve">A pair of leathery wings sprout from your back. Your paws are soft, smooth and agile. Your claws are white and neat, since Mom insists on cutting them for you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-282"/>
+    </children>
+  </item>
+  <item nodeId="node-282">
+    <command xml:space="preserve">touch engraving</command>
+    <result xml:space="preserve">You spread your wings and smoothly glide to the engraving as soon as you touch it, it gains colour in a flurry of sparks. Its wings start glowing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-283"/>
+    </children>
+  </item>
+  <item nodeId="node-283">
+    <command xml:space="preserve">take claw</command>
+    <result xml:space="preserve">The claw attaches itself to one of your claws. Suddenly, it, and all your other claws, start growing, and turn from white to a strange, metallic black. You feel dangerous.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-284"/>
+    </children>
+  </item>
+  <item nodeId="node-284">
+    <command xml:space="preserve">touch engraving</command>
+    <result xml:space="preserve">You spread your wings and smoothly glide to the engraving as soon as you touch it, it gains colour in a flurry of sparks. Its clawes, and wings start glowing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-285"/>
+    </children>
+  </item>
+  <item nodeId="node-285">
+    <command xml:space="preserve">take heart</command>
+    <result xml:space="preserve">The heart rises in the air, starts glowing, and turns into a ray of light that shoots straight at your heart. You feel a warm light spreading inside you. Your mind expands to new understanding and you feel you can now talk to people.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-286"/>
+    </children>
+  </item>
+  <item nodeId="node-286">
+    <command xml:space="preserve">take ash</command>
+    <result xml:space="preserve">You try picking the ash in your mouth, but swallow it accidentally. Your intestines feel like they're on fire, and you wonder if your muzzle will fall off from the pain. Eventually the pain subsides. The fire, on the other hand, doesn't...&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-287"/>
+    </children>
+  </item>
+  <item nodeId="node-287">
+    <command xml:space="preserve">touch engraving</command>
+    <result xml:space="preserve">You spread your wings and smoothly glide to the engraving as soon as you touch it, it gains colour in a flurry of sparks. Its flames, eyes, clawes, and wings start glowing.&#x000A;The bird on the engraving seems to come to live as it radiates sunlight. Suddenly, with a bright flash, it turns into a small, crimson egg.&#x000A;Touching the egg seems to make the entire world spin.&#x000A;&#x000A;Home&#x000A;You wake up in your own bed.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-288"/>
+    </children>
+  </item>
+  <item nodeId="node-288">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-289"/>
+    </children>
+  </item>
+  <item nodeId="node-289">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">You played in the park for hours, dashing around the people and chasing the other dogs. When Mom finally brought you home, you were so tired you were not even able to have your dinner. You just fell in your bed in the flat's corridor, and doze off.&#x000A;&#x000A;Tavern&#x000A;You are in a large room with several long wooden tables with benches, and a bar. A large oaken log is slowly burning in the fireplace, producing more heat than light. Shadows dance around the room, barely lighting the faces of the people here. &#x000A;&#x000A;Next to the far side of the bar, on the west side of the tavern, there is a green door with a circular window, apparently leading to the garden.&#x000A;&#x000A;A door made out of brown logs held together by metal rings is on the south wall. The coat rack and the welcome mat next to it suggest it is the front door.&#x000A;&#x000A;A surly, bald man stands behind the bar, absent-mindedly washing a glass with an extremely dirty cloth.&#x000A;&#x000A;A tall man wearing a long, gray cloak and eyepatch is sitting, cross-legged, next to the fire. He is carrying a long staff. Many silver hairs shimmer in his otherwise dark beard. A raven is sitting on his shoulder.&#x000A;&#x000A;Above the fireplace hangs a peculiar engraving of a bird that appears to be on fire. You notice that occasionally the tall man throws a look at it and appears very thoughtful.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-290"/>
+    </children>
+  </item>
+  <item nodeId="node-290">
+    <command xml:space="preserve">touch engraving</command>
+    <result xml:space="preserve">You spread your wings and smoothly glide to the engraving as soon as you touch it, it gains colour in a flurry of sparks. Its flames, eyes, clawes, and wings start glowing.&#x000A;The bird on the engraving seems to come to live as it radiates sunlight. Suddenly, with a bright flash, it turns into a small, crimson egg.&#x000A;Touching the egg seems to make the entire world spin.&#x000A;&#x000A;Home&#x000A;You wake up in your own bed.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-291">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">You played in the park for hours, dashing around the people and chasing the other dogs. When Mom finally brought you home, you were so tired you were not even able to have your dinner. You just fell in your bed in the flat's corridor, and doze off.&#x000A;&#x000A;Tavern&#x000A;In your sleep, you try rolling around in your bed. It feels surprusingly hard, and you wake up startled, next to a lit fireplace. You are in a large room with several long wooden tables with benches, and a bar. A large oaken log is slowly burning in the fireplace, producing more heat than light. Shadows dance around the room, barely lighting the faces of the people here. &#x000A;&#x000A;Next to the far side of the bar, on the west side of the tavern, there is a green door with a circular window, apparently leading to the garden.&#x000A;&#x000A;A door made out of brown logs held together by metal rings is on the south wall. The coat rack and the welcome mat next to it suggest it is the front door.&#x000A;&#x000A;A surly, bald man stands behind the bar, absent-mindedly washing a glass with an extremely dirty cloth.&#x000A;&#x000A;A tall man wearing a long, gray cloak and eyepatch is sitting, cross-legged, next to the fire. He is carrying a long staff. Many silver hairs shimmer in his otherwise dark beard. A raven is sitting on his shoulder.&#x000A;&#x000A;Above the fireplace hangs a peculiar engraving of a bird that appears to be on fire. You notice that occasionally the tall man throws a look at it and appears very thoughtful.&#x000A;&#x000A;You can also see a claw, heart, ash and wing here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-292"/>
+    </children>
+  </item>
+  <item nodeId="node-292">
+    <command xml:space="preserve">take claw</command>
+    <result xml:space="preserve">The claw attaches itself to one of your claws. Suddenly, it, and all your other claws, start growing, and turn from white to a strange, metallic black. You feel dangerous.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-293"/>
+    </children>
+  </item>
+  <item nodeId="node-293">
+    <command xml:space="preserve">touch engraving</command>
+    <result xml:space="preserve">You can hardly reach the engraving from the ground.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-294"/>
+    </children>
+  </item>
+  <item nodeId="node-294">
+    <command xml:space="preserve">take wing</command>
+    <result xml:space="preserve">The wing is suddenly picked up by a gust of wind. It floats in the air, until landing softly on your back. You feel it splitting in two, and attaching the halves behind your shoulder plates. The process is not painful, takes only a couple of minutes, and then you feel lighter.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-295"/>
+    </children>
+  </item>
+  <item nodeId="node-295">
+    <command xml:space="preserve">take heart</command>
+    <result xml:space="preserve">The heart rises in the air, starts glowing, and turns into a ray of light that shoots straight at your heart. You feel a warm light spreading inside you. Your mind expands to new understanding and you feel you can now talk to people.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-296"/>
+    </children>
+  </item>
+  <item nodeId="node-296">
+    <command xml:space="preserve">take ash</command>
+    <result xml:space="preserve">You try carefully picking the ash in your maw, but swallow it accidentally. Your intestines feel like they're on fire, and you wonder if your muzzle will fall off from the pain. Eventually the pain subsides. The fire, on the other hand, doesn't...&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-297"/>
+    </children>
+  </item>
+  <item nodeId="node-297">
+    <command xml:space="preserve">touch engraving</command>
+    <result xml:space="preserve">You spread your wings and smoothly glide to the engraving as soon as you touch it, it gains colour in a flurry of sparks. Its flames, eyes, clawes, and wings start glowing.&#x000A;The bird on the engraving seems to come to live as it radiates sunlight. Suddenly, with a bright flash, it turns into a small, crimson egg.&#x000A;Touching the egg seems to make the entire world spin.&#x000A;&#x000A;&#x000A;&#x000A;    *** You wake up in your own bed. Once more, your coat is black and shiny, instead of made of scales, you have no wings on your back, and the fire inside your lungs seems to have quelled. Curiously though, under your paws you feel a warm, oval object. ***&#x000A;&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
