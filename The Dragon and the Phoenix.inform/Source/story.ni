@@ -48,22 +48,37 @@ A zombie is a kind of mortal. A zombie is usually flammable.
 Instead of attacking a zombie when the player is clawed:
 	say "You claw and claw, but it doesn't seem to stop the zombie menace.".
 There are four zombies.
+
+A torch is a kind of thing. A torch can be lit or unlit.
 	
 
 Chapter 2 - Verbs
 
 The block burning rule is not listed in the check burning rulebook.
 Check burning something:
-	If the player is non-bitey:
+	If the player is non-bitey and the player is not carrying the candle:
 		say "How exactly are you planning to burn it?" instead;
-	If the noun is non-flammable:
-		say "That's not gonna end up alright." instead.
+	If the noun is non-flammable and the noun is not a torch:
+		say "You won't be able to do set [the noun] on fire." instead;
+	if the noun is not a torch and the player is non-bitey:
+		say "That'll hardly be enough to burn [the noun]." instead;
+	if the noun is a torch and the noun is non-flammable and the noun is lit:
+		say "[the noun] is already lit." instead.
 Carry out burning something:
+	if the noun is a torch:
+		now the noun is lit;
 	if the noun is a mortal:
 		now the noun is dead;
-	now the noun is nowhere.
+	if the noun is flammable:
+		now the noun is nowhere.
 Report burning something:
-	say "You burn [the noun] to crisps.".
+	if the noun is flammable:
+		say "You burn [the noun] to crisps.";
+	otherwise:
+		If the player is bitey:
+			say "You breathe a little flame and light [the noun].";
+		otherwise:
+			say "You light [the noun] using the candle."
 
 Check attacking something:
 	if the noun is peaceful, say "You don't think [the noun] is threatening." instead;
@@ -89,7 +104,6 @@ Carry out waiting more:
 		follow the turn sequence rules. 
 Report waiting more: 
 	say "It is now [time of day + 1 minute]." 
-
 
 
 
@@ -157,7 +171,7 @@ item	hint
 
 Part 1 - In the park
 
-Park is a room. "[if park is unvisited]You've been tugging at the end of your leash, but Mom's been holding you back the whole way.  Finally, you've reached the park. [italic type](This is a tutorial, if you want to skip it, just [bold type]wait[italic type].).[roman type][end if]It is a beautiful day with neary a cloud roaming in the sky, and the park is full with people and other dogs.".
+Park is a room. "[if park is unvisited][italic type](This is a tutorial, if you want to skip it, just [bold type]wait[italic type].).[roman type][line break]You've been tugging at the end of your leash, but Mom's been holding you back the whole way.  Finally, you've reached the park. [end if]It is a beautiful day with neary a cloud roaming in the sky, and the park is full with people and other dogs.".
 The ball is here. "[one of]Mom pulls out your favourite chewed out tennis ball, and throws it. 'Go [bold type]fetch the ball[roman type], Drake!'. The tennis ball rolls next to a large tree.[or]Your favourite ball is sitting next to a large tree.[stopping]". 
 Mom is a person in the park.  "Mom is waiting for you."
 
@@ -360,14 +374,99 @@ The Wet Forest is a grassmaze room. "A stream is rumbling along nearby. Now not 
 
 Part 5 - The Village Square
  
-The Village Square is east of the front lawn.
-
-
+The Village Square is east of the front lawn. "Looking around you can see that the village is seen better days - its houses in disrepair, the roads overgrown, the people - barely present. The square, obviously once a lively place of culture and commerce, is now disused, only shattered remains of stalls and kiosks remaining."
+The statue is a door. The statue is down from the village square. The statue is closed, unlocked, not openable and not lockable. "[if closed]Dominating the view is a statue of a horse and rider, contorted into an unnatural pose, as if just hit by an enemy arrow. Several braziers are next to the statue. Perhaps lighting all of them may help?[else]The horse and rider, now in a calm trot., tower above dark stone stairs, apparently leading to some sort of sewer[end if]."
+The hind left brazier is a torch in the village square. The hind left brazier is unlit. "Next to the hind left leg of the horse , you can see [if lit]a lit[else]an extinguished[end if] brazier.". 
+The hind right brazier is a torch in the village square. The hind right brazier is lit. "Next to the hind right leg of the horse , you can see [if lit]a lit[else]an extinguished[end if] brazier.". 
+The front left brazier is a torch in the village square. The front left brazier is lit. "Next to the front left leg of the horse , you can see a [if lit]a lit[else]an extinguished[end if] brazier.". 
+The front right brazier is a torch in the village square. The front right brazier is lit. "Next to the front right leg of the horse , you can see [if lit]a lit[else]an extinguished[end if] brazier.". 
+After burning the hind left brazier:
+	if the player is non-bitey:
+		say "You light the hind left brazier using the candle.";
+	otherwise:
+		say "You breathe out a little flame and light the hind left brazier";
+	if the hind right brazier is lit:
+		now the hind right brazier is unlit;
+		say "The hind right brazier extinguishes itself.";
+	otherwise:
+		now the hind right brazier is lit;
+		say "The hind right brazier lights itself, seemingly by magic.";
+	if the front left brazier is lit:
+		now the front left brazier is unlit;
+		say "The front left brazier extinguishes itself.";
+	otherwise:
+		now the front left brazier is lit;
+		say "The front left brazier lights itself, seemingly by magic.";
+	if the front left brazier is lit and the front right brazier is lit and the hind left brazier is lit and the hind right brazier is lit:
+		say "With a deep rumble the statue moves aside while also straightening its form to that of a rider and horse in a leisurely trot. After the cloud of dust subsides, a stairway leading down is revealed.";
+		now the statue is open.
+After burning the hind right brazier:
+	if the player is non-bitey:
+		say "You light the hind right brazier using the candle.";
+	otherwise:
+		say "You breathe out a little flame and light the hind right brazier";
+	if the hind left brazier is lit:
+		now the hind left brazier is unlit;
+		say "The hind left brazier extinguishes itself.";
+	otherwise:
+		now the hind left brazier is lit;
+		say "The hind left brazier lights itself, seemingly by magic.";
+	if the front right brazier is lit:
+		now the front right brazier is unlit;
+		say "The front right brazier extinguishes itself.";
+	otherwise:
+		now the front right brazier is lit;
+		say "The front left brazier lights itself, seemingly by magic.";
+	if the front left brazier is lit and the front right brazier is lit and the hind left brazier is lit and the hind right brazier is lit:
+		say "With a deep rumble the statue moves aside while also straightening its form to that of a rider and horse in a leisurely trot. After the cloud of dust subsides, a stairway leading down is revealed.";
+		now the statue is open.
+After burning the front right brazier:
+	if the player is non-bitey:
+		say "You light the front right brazier using the candle.";
+	otherwise:
+		say "You breathe out a little flame and light the front right brazier";
+	if the hind right brazier is lit:
+		now the hind right brazier is unlit;
+		say "The hind right brazier extinguishes itself.";
+	otherwise:
+		now the hind right brazier is lit;
+		say "The hind right brazier lights itself, seemingly by magic.";
+	if the front left brazier is lit:
+		now the front left brazier is unlit;
+		say "The front left brazier extinguishes itself.";
+	otherwise:
+		now the front left brazier is lit;
+		say "The front left brazier lights itself, seemingly by magic.";
+	if the front left brazier is lit and the front right brazier is lit and the hind left brazier is lit and the hind right brazier is lit:
+		say "With a deep rumble the statue moves aside while also straightening its form to that of a rider and horse in a leisurely trot. After the cloud of dust subsides, a stairway leading down is revealed.";
+		now the statue is open.
+After burning the front left brazier:
+	if the player is non-bitey:
+		say "You light the front left brazier using the candle.";
+	otherwise:
+		say "You breathe out a little flame and light the front left brazier";
+	if the hind left brazier is lit:
+		now the hind left brazier is unlit;
+		say "The hind left brazier extinguishes itself.";
+	otherwise:
+		now the hind left brazier is lit;
+		say "The hind left brazier lights itself, seemingly by magic.";
+	if the front right brazier is lit:
+		now the front right brazier is unlit;
+		say "The front right brazier extinguishes itself.";
+	otherwise:
+		now the front right brazier is lit;
+		say "The front left brazier lights itself, seemingly by magic.";
+	if the front left brazier is lit and the front right brazier is lit and the hind left brazier is lit and the hind right brazier is lit:
+		say "With a deep rumble the statue moves aside while also straightening its form to that of a rider and horse in a leisurely trot. After the cloud of dust subsides, a stairway leading down is revealed.";
+		now the statue is open.
+	
 
 Part 6 - Graveyard
 
 The Graveyard Entrance is west of the front lawn.
 The metal door is a door. "A door of old, yellowed iron, with a heavy padlock, is barring the entrance to the cemetary. The padlock is [if unlocked]unlocked[else]locked[end if]." The metal door is south of the graveyard entrance. The metal door is locked. The matching key of the metal door is the round iron key.
+A candle is in the graveyard entrance. "A small wax candle is rolling around in the dirt next to the fence of the cemetery.". 
 Before going from the graveyard entrance to the graves when the player is winged:
 	say "You spread your wings and fly over the metal bars.";
 	now the player is in the graves instead.

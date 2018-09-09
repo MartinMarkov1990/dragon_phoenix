@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-126">
   <generator>Windows Inform 7 6M62</generator>
-  <activeNode nodeId="node-970"/>
+  <activeNode nodeId="node-1044"/>
   <item nodeId="node-126">
     <command xml:space="preserve">The Dragon and the Phoenix</command>
-    <result xml:space="preserve">The Dragon and the Phoenix&#x000A;An Interactive Fiction by Martin Markov&#x000A;Release 1 / Serial number 180909 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Park&#x000A;You've been tugging at the end of your leash, but Mom's been holding you back the whole way.  Finally, you've reached the park. (This is a tutorial, if you want to skip it, just wait.).It is a beautiful day with neary a cloud roaming in the sky, and the park is full with people and other dogs.&#x000A;&#x000A;Mom pulls out your favourite chewed out tennis ball, and throws it. "Go fetch the ball, Drake!". The tennis ball rolls next to a large tree.&#x000A;&#x000A;Mom is waiting for you.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">The Dragon and the Phoenix&#x000A;An Interactive Fiction by Martin Markov&#x000A;Release 1 / Serial number 180910 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Park&#x000A;(This is a tutorial, if you want to skip it, just wait.).&#x000A;You've been tugging at the end of your leash, but Mom's been holding you back the whole way.  Finally, you've reached the park. It is a beautiful day with neary a cloud roaming in the sky, and the park is full with people and other dogs.&#x000A;&#x000A;Mom pulls out your favourite chewed out tennis ball, and throws it. "Go fetch the ball, Drake!". The tennis ball rolls next to a large tree.&#x000A;&#x000A;Mom is waiting for you.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>YES</changed>
+    <changed>NO</changed>
     <children>
       <child nodeId="node-127"/>
       <child nodeId="node-133"/>
@@ -1121,6 +1121,7 @@
       <child nodeId="node-738"/>
       <child nodeId="node-786"/>
       <child nodeId="node-845"/>
+      <child nodeId="node-976"/>
     </children>
   </item>
   <item nodeId="node-292">
@@ -5144,16 +5145,18 @@
     <children>
       <child nodeId="node-846"/>
       <child nodeId="node-905"/>
+      <child nodeId="node-1036"/>
     </children>
   </item>
   <item nodeId="node-846">
     <command xml:space="preserve">w</command>
-    <result xml:space="preserve">Graveyard Entrance&#x000A;You can see a metal door here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Graveyard Entrance&#x000A;A door of old, yellowed iron, with a heavy padlock, is barring the entrance to the cemetary. The padlock is locked.&#x000A;&#x000A;A small wax candle is rolling around in the dirt next to the fence of the cemetery.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-847"/>
       <child nodeId="node-872"/>
+      <child nodeId="node-971"/>
     </children>
   </item>
   <item nodeId="node-847">
@@ -5483,6 +5486,48 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-971">
+    <command xml:space="preserve">take candle</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-972"/>
+    </children>
+  </item>
+  <item nodeId="node-972">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Front Lawn&#x000A;Outside the tavern, you see it is a large building painted white, with a red roof and a small brick chimney.&#x000A;There is a large empty space on which several carts are parked.&#x000A;A wide dirt road stretches in front of you. To the east a large statue towers in the middle of the village square with. To the west you can see a tall metal fence surrounding a number of graves overgrown with ivy, with a mausoleum made of white stone in the back of it.&#x000A;&#x000A;A door made out of brown logs held together by metal rings is on the wall of the Tavern.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-973"/>
+    </children>
+  </item>
+  <item nodeId="node-973">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Village Square&#x000A;Looking around you can see that the village is seen better days - its houses in disrepair, the roads overgrown, the people - barely present. The square, obviously once a lively place of culture and commerce, is now disused, only shattered remains of stalls and kiosks remaining.&#x000A;&#x000A;Dominating the view is a statue of a horse and rider, contorted into an unnatural pose, as if just hit by an enemy arrow. Several braziers are next to the statue. Perhaps lighting all of them may help?.&#x000A;&#x000A;Next to the hind left leg of the horse , you can see an extinguished brazier.&#x000A;&#x000A;Next to the hind right leg of the horse , you can see an extinguished brazier.&#x000A;&#x000A;Next to the front left leg of the horse , you can see a an extinguishedbrazier.&#x000A;&#x000A;Next to the front right leg of the horse , you can see an extinguishedbrazier.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-974"/>
+    </children>
+  </item>
+  <item nodeId="node-974">
+    <command xml:space="preserve">light hind left brazier</command>
+    <result xml:space="preserve">How exactly are you planning to burn it?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-975"/>
+    </children>
+  </item>
+  <item nodeId="node-975">
+    <command xml:space="preserve">light brazier</command>
+    <result xml:space="preserve">Which do you mean, the hind left brazier, the hind right brazier, the front left brazier or the front right brazier?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-905">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Tavern&#x000A;You are in a large room with several long wooden tables with benches, and a bar. Next to it you can see a stairway leading down. A large oaken log is slowly burning in the fireplace, producing more heat than light. Shadows dance around the room, barely lighting the faces of the people here. &#x000A;&#x000A;A door made out of brown logs held together by metal rings is on the south wall. The coat rack and the welcome mat next to it suggest it is the front door.&#x000A;&#x000A;Next to the far side of the bar, on the west side of the tavern, there is a green door with a circular window, apparently leading to the garden.&#x000A;&#x000A;A surly, bald man stands behind the bar, absent-mindedly washing a glass with an extremely dirty cloth.&#x000A;&#x000A;A tall man wearing a long, gray cloak and eyepatch is sitting, cross-legged, next to the fire. He is carrying a long staff. Many silver hairs shimmer in his otherwise dark beard. A raven is sitting on his shoulder. He seems like a person that would be worthwile to listen to.&#x000A;&#x000A;Above the fireplace hangs a peculiar engraving of a bird that appears to be on fire. You notice that occasionally the tall man throws a look at it and appears very thoughtful.&#x000A;&#x000A;&gt;</result>
@@ -5720,6 +5765,621 @@
   <item nodeId="node-931">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Graveyard Entrance&#x000A;A door of old, yellowed iron, with a heavy padlock, is barring the entrance to the cemetary. The padlock is unlocked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1036">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Village Square&#x000A;Looking around you can see that the village is seen better days - its houses in disrepair, the roads overgrown, the people - barely present. The square, obviously once a lively place of culture and commerce, is now disused, only shattered remains of stalls and kiosks remaining.&#x000A;&#x000A;Dominating the view is a statue of a horse and rider, contorted into an unnatural pose, as if just hit by an enemy arrow. Several braziers are next to the statue. Perhaps lighting all of them may help?.&#x000A;&#x000A;Next to the hind left leg of the horse , you can see an extinguished brazier.&#x000A;&#x000A;Next to the hind right leg of the horse , you can see a lit brazier.&#x000A;&#x000A;Next to the front left leg of the horse , you can see a a lit brazier.&#x000A;&#x000A;Next to the front right leg of the horse , you can see a lit brazier.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1037"/>
+    </children>
+  </item>
+  <item nodeId="node-1037">
+    <command xml:space="preserve">purloin candle</command>
+    <result xml:space="preserve">[Purloined.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1038"/>
+    </children>
+  </item>
+  <item nodeId="node-1038">
+    <command xml:space="preserve">light hind left brazier</command>
+    <result xml:space="preserve">You light the hind left brazier using the candle.&#x000A;The hind right brazier extinguishes itself.&#x000A;The front left brazier extinguishes itself.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-1039"/>
+    </children>
+  </item>
+  <item nodeId="node-1039">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Village Square&#x000A;Looking around you can see that the village is seen better days - its houses in disrepair, the roads overgrown, the people - barely present. The square, obviously once a lively place of culture and commerce, is now disused, only shattered remains of stalls and kiosks remaining.&#x000A;&#x000A;Dominating the view is a statue of a horse and rider, contorted into an unnatural pose, as if just hit by an enemy arrow. Several braziers are next to the statue. Perhaps lighting all of them may help?.&#x000A;&#x000A;Next to the hind left leg of the horse , you can see a lit brazier.&#x000A;&#x000A;Next to the hind right leg of the horse , you can see an extinguished brazier.&#x000A;&#x000A;Next to the front left leg of the horse , you can see a an extinguished brazier.&#x000A;&#x000A;Next to the front right leg of the horse , you can see a lit brazier.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1040"/>
+    </children>
+  </item>
+  <item nodeId="node-1040">
+    <command xml:space="preserve">light front left leg</command>
+    <result xml:space="preserve">I only understood you as far as wanting to light the front left brazier.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1041"/>
+    </children>
+  </item>
+  <item nodeId="node-1041">
+    <command xml:space="preserve">light front left brazier</command>
+    <result xml:space="preserve">You light the front left brazier using the candle.&#x000A;The hind left brazier extinguishes itself.&#x000A;The front right brazier extinguishes itself.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1042"/>
+    </children>
+  </item>
+  <item nodeId="node-1042">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Village Square&#x000A;Looking around you can see that the village is seen better days - its houses in disrepair, the roads overgrown, the people - barely present. The square, obviously once a lively place of culture and commerce, is now disused, only shattered remains of stalls and kiosks remaining.&#x000A;&#x000A;Dominating the view is a statue of a horse and rider, contorted into an unnatural pose, as if just hit by an enemy arrow. Several braziers are next to the statue. Perhaps lighting all of them may help?.&#x000A;&#x000A;Next to the hind left leg of the horse , you can see an extinguished brazier.&#x000A;&#x000A;Next to the hind right leg of the horse , you can see an extinguished brazier.&#x000A;&#x000A;Next to the front left leg of the horse , you can see a a lit brazier.&#x000A;&#x000A;Next to the front right leg of the horse , you can see an extinguished brazier.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1043"/>
+    </children>
+  </item>
+  <item nodeId="node-1043">
+    <command xml:space="preserve">light hind right brazier</command>
+    <result xml:space="preserve">You light the hind right brazier using the candle.&#x000A;The hind left brazier lights itself, seemingly by magic.&#x000A;The front left brazier lights itself, seemingly by magic.&#x000A;With a deep rumble the statue moves aside while also straightening its form to that of a rider and horse in a leisurely trot. After the cloud of dust subsides, a stairway leading down is revealed.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1044"/>
+    </children>
+  </item>
+  <item nodeId="node-1044">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Village Square&#x000A;Looking around you can see that the village is seen better days - its houses in disrepair, the roads overgrown, the people - barely present. The square, obviously once a lively place of culture and commerce, is now disused, only shattered remains of stalls and kiosks remaining.&#x000A;&#x000A;The horse and rider, now in a calm trot., tower above dark stone stairs, apparently leading to some sort of sewer.&#x000A;&#x000A;Next to the hind left leg of the horse , you can see a lit brazier.&#x000A;&#x000A;Next to the hind right leg of the horse , you can see a lit brazier.&#x000A;&#x000A;Next to the front left leg of the horse , you can see a a lit brazier.&#x000A;&#x000A;Next to the front right leg of the horse , you can see a lit brazier.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-976">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">The barkeep glares at you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-977"/>
+    </children>
+  </item>
+  <item nodeId="node-977">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">The barkeep glares at you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-978"/>
+    </children>
+  </item>
+  <item nodeId="node-978">
+    <command xml:space="preserve">take key</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-979"/>
+    </children>
+  </item>
+  <item nodeId="node-979">
+    <command xml:space="preserve">up</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-980"/>
+    </children>
+  </item>
+  <item nodeId="node-980">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">(first opening the front door)&#x000A;&#x000A;Front Lawn&#x000A;Outside the tavern, you see it is a large building painted white, with a red roof and a small brick chimney.&#x000A;There is a large empty space on which several carts are parked.&#x000A;A wide dirt road stretches in front of you. To the east a large statue towers in the middle of the village square with. To the west you can see a tall metal fence surrounding a number of graves overgrown with ivy, with a mausoleum made of white stone in the back of it.&#x000A;&#x000A;A door made out of brown logs held together by metal rings is on the wall of the Tavern.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-981"/>
+    </children>
+  </item>
+  <item nodeId="node-981">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Graveyard Entrance&#x000A;A door of old, yellowed iron, with a heavy padlock, is barring the entrance to the cemetary. The padlock is locked.&#x000A;&#x000A;A small wax candle is rolling around in the dirt next to the fence of the cemetery.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-982"/>
+    </children>
+  </item>
+  <item nodeId="node-982">
+    <command xml:space="preserve">take candle</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-983"/>
+    </children>
+  </item>
+  <item nodeId="node-983">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">(first opening the metal door)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-984"/>
+    </children>
+  </item>
+  <item nodeId="node-984">
+    <command xml:space="preserve">unlock door</command>
+    <result xml:space="preserve">(with the candle)&#x000A;That doesn't seem to fit the lock.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-985"/>
+    </children>
+  </item>
+  <item nodeId="node-985">
+    <command xml:space="preserve">unlock door with round iron key</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-986"/>
+    </children>
+  </item>
+  <item nodeId="node-986">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">(first opening the metal door)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-987"/>
+    </children>
+  </item>
+  <item nodeId="node-987">
+    <command xml:space="preserve">burn zombie</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-988"/>
+    </children>
+  </item>
+  <item nodeId="node-988">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Graveyard Entrance&#x000A;A door of old, yellowed iron, with a heavy padlock, is barring the entrance to the cemetary. The padlock is locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-989"/>
+    </children>
+  </item>
+  <item nodeId="node-989">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Front Lawn&#x000A;Outside the tavern, you see it is a large building painted white, with a red roof and a small brick chimney.&#x000A;There is a large empty space on which several carts are parked.&#x000A;A wide dirt road stretches in front of you. To the east a large statue towers in the middle of the village square with. To the west you can see a tall metal fence surrounding a number of graves overgrown with ivy, with a mausoleum made of white stone in the back of it.&#x000A;&#x000A;A door made out of brown logs held together by metal rings is on the wall of the Tavern.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-990"/>
+    </children>
+  </item>
+  <item nodeId="node-990">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Tavern&#x000A;You are in a large room with several long wooden tables with benches, and a bar. Next to it you can see a stairway leading down. A large oaken log is slowly burning in the fireplace, producing more heat than light. Shadows dance around the room, barely lighting the faces of the people here. &#x000A;&#x000A;A door made out of brown logs held together by metal rings is on the south wall. The coat rack and the welcome mat next to it suggest it is the front door.&#x000A;&#x000A;Next to the far side of the bar, on the west side of the tavern, there is a green door with a circular window, apparently leading to the garden.&#x000A;&#x000A;A surly, bald man stands behind the bar, absent-mindedly washing a glass with an extremely dirty cloth.&#x000A;&#x000A;A tall man wearing a long, gray cloak and eyepatch is sitting, cross-legged, next to the fire. He is carrying a long staff. Many silver hairs shimmer in his otherwise dark beard. A raven is sitting on his shoulder. He seems like a person that would be worthwile to listen to.&#x000A;&#x000A;Above the fireplace hangs a peculiar engraving of a bird that appears to be on fire. You notice that occasionally the tall man throws a look at it and appears very thoughtful.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-991"/>
+    </children>
+  </item>
+  <item nodeId="node-991">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">The barkeep glares at you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-992"/>
+    </children>
+  </item>
+  <item nodeId="node-992">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">The barkeep glares at you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-993"/>
+    </children>
+  </item>
+  <item nodeId="node-993">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">The barkeep glares at you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-994"/>
+    </children>
+  </item>
+  <item nodeId="node-994">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">The barkeep glares at you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-995"/>
+    </children>
+  </item>
+  <item nodeId="node-995">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">The barkeep glares at you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-996"/>
+    </children>
+  </item>
+  <item nodeId="node-996">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">The barkeep glares at you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-997"/>
+    </children>
+  </item>
+  <item nodeId="node-997">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">The barkeep glares at you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-998"/>
+    </children>
+  </item>
+  <item nodeId="node-998">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">The barkeep glares at you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-999"/>
+    </children>
+  </item>
+  <item nodeId="node-999">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">The barkeep glares at you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1000"/>
+    </children>
+  </item>
+  <item nodeId="node-1000">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">The barkeep glares at you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1001"/>
+    </children>
+  </item>
+  <item nodeId="node-1001">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">The barkeep glares at you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1002"/>
+    </children>
+  </item>
+  <item nodeId="node-1002">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">The barkeep glares at you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1003"/>
+    </children>
+  </item>
+  <item nodeId="node-1003">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">The barkeep glares at you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1004"/>
+    </children>
+  </item>
+  <item nodeId="node-1004">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">The barkeep glares at you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1005"/>
+    </children>
+  </item>
+  <item nodeId="node-1005">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">The barkeep glares at you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1006"/>
+    </children>
+  </item>
+  <item nodeId="node-1006">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">The barkeep glares at you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1007"/>
+    </children>
+  </item>
+  <item nodeId="node-1007">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">The barkeep glares at you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1008"/>
+    </children>
+  </item>
+  <item nodeId="node-1008">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">The barkeep glares at you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1009"/>
+    </children>
+  </item>
+  <item nodeId="node-1009">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">The barkeep glares at you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1010"/>
+    </children>
+  </item>
+  <item nodeId="node-1010">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">The barkeep glares at you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1011"/>
+    </children>
+  </item>
+  <item nodeId="node-1011">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">The barkeep glares at you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1012"/>
+    </children>
+  </item>
+  <item nodeId="node-1012">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">The barkeep glares at you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1013"/>
+    </children>
+  </item>
+  <item nodeId="node-1013">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">The barkeep glares at you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1014"/>
+    </children>
+  </item>
+  <item nodeId="node-1014">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You manage to sneak by the tavern keeper and go downstairs.&#x000A;&#x000A;Basement&#x000A;Jars, bottles, crates and boxes of all kinds are scattered around the basement.&#x000A;&#x000A;A hunk of yellow cheese is sitting on one of the boxes.&#x000A;&#x000A;Something is shimmering on a crate in the furthest corner. On closer inspection it seems to be an iron key with a round end.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1015"/>
+    </children>
+  </item>
+  <item nodeId="node-1015">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1016"/>
+    </children>
+  </item>
+  <item nodeId="node-1016">
+    <command xml:space="preserve">take key</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1017"/>
+    </children>
+  </item>
+  <item nodeId="node-1017">
+    <command xml:space="preserve">take chees</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1018"/>
+    </children>
+  </item>
+  <item nodeId="node-1018">
+    <command xml:space="preserve">take cheese</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1019"/>
+    </children>
+  </item>
+  <item nodeId="node-1019">
+    <command xml:space="preserve">up</command>
+    <result xml:space="preserve">Tavern&#x000A;You are in a large room with several long wooden tables with benches, and a bar. Next to it you can see a stairway leading down. A large oaken log is slowly burning in the fireplace, producing more heat than light. Shadows dance around the room, barely lighting the faces of the people here. &#x000A;&#x000A;A door made out of brown logs held together by metal rings is on the south wall. The coat rack and the welcome mat next to it suggest it is the front door.&#x000A;&#x000A;Next to the far side of the bar, on the west side of the tavern, there is a green door with a circular window, apparently leading to the garden.&#x000A;&#x000A;A surly, bald man stands behind the bar, absent-mindedly washing a glass with an extremely dirty cloth.&#x000A;&#x000A;A tall man wearing a long, gray cloak and eyepatch is sitting, cross-legged, next to the fire. He is carrying a long staff. Many silver hairs shimmer in his otherwise dark beard. A raven is sitting on his shoulder. He seems like a person that would be worthwile to listen to.&#x000A;&#x000A;Above the fireplace hangs a peculiar engraving of a bird that appears to be on fire. You notice that occasionally the tall man throws a look at it and appears very thoughtful.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1020"/>
+    </children>
+  </item>
+  <item nodeId="node-1020">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Front Lawn&#x000A;Outside the tavern, you see it is a large building painted white, with a red roof and a small brick chimney.&#x000A;There is a large empty space on which several carts are parked.&#x000A;A wide dirt road stretches in front of you. To the east a large statue towers in the middle of the village square with. To the west you can see a tall metal fence surrounding a number of graves overgrown with ivy, with a mausoleum made of white stone in the back of it.&#x000A;&#x000A;A door made out of brown logs held together by metal rings is on the wall of the Tavern.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1021"/>
+    </children>
+  </item>
+  <item nodeId="node-1021">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Graveyard Entrance&#x000A;A door of old, yellowed iron, with a heavy padlock, is barring the entrance to the cemetary. The padlock is locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1022"/>
+    </children>
+  </item>
+  <item nodeId="node-1022">
+    <command xml:space="preserve">unlock door with key</command>
+    <result xml:space="preserve">You unlock the metal door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1023"/>
+    </children>
+  </item>
+  <item nodeId="node-1023">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">(first opening the metal door)&#x000A;&#x000A;Graves&#x000A;The graves here are dillapidated, nearly crumbling, and covered with ivy and various weeds. The villagers don't seem to be taking much care of them. &#x000A;&#x000A;A door of old, yellowed iron, with a heavy padlock, is barring the entrance to the cemetary. The padlock is unlocked.&#x000A;&#x000A;A heavy stone door blocks the entrance to the mausoleum. A weird stone plaque with some odd, geometric-shaped depressions, is on the door. There are a round plate, a square plate, a triangle plate and a hexagon plate&#x000A;&#x000A;You can also see two zombies here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1024"/>
+    </children>
+  </item>
+  <item nodeId="node-1024">
+    <command xml:space="preserve">burn zombie</command>
+    <result xml:space="preserve">That'll hardly be enough to burn the zombie.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1025"/>
+    </children>
+  </item>
+  <item nodeId="node-1025">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Graveyard Entrance&#x000A;A door of old, yellowed iron, with a heavy padlock, is barring the entrance to the cemetary. The padlock is unlocked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1026"/>
+    </children>
+  </item>
+  <item nodeId="node-1026">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Front Lawn&#x000A;Outside the tavern, you see it is a large building painted white, with a red roof and a small brick chimney.&#x000A;There is a large empty space on which several carts are parked.&#x000A;A wide dirt road stretches in front of you. To the east a large statue towers in the middle of the village square with. To the west you can see a tall metal fence surrounding a number of graves overgrown with ivy, with a mausoleum made of white stone in the back of it.&#x000A;&#x000A;A door made out of brown logs held together by metal rings is on the wall of the Tavern.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1027"/>
+    </children>
+  </item>
+  <item nodeId="node-1027">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Village Square&#x000A;Looking around you can see that the village is seen better days - its houses in disrepair, the roads overgrown, the people - barely present. The square, obviously once a lively place of culture and commerce, is now disused, only shattered remains of stalls and kiosks remaining.&#x000A;&#x000A;Dominating the view is a statue of a horse and rider, contorted into an unnatural pose, as if just hit by an enemy arrow. Several braziers are next to the statue. Perhaps lighting all of them may help?.&#x000A;&#x000A;Next to the hind left leg of the horse , you can see an extinguished brazier.&#x000A;&#x000A;Next to the hind right leg of the horse , you can see an extinguished brazier.&#x000A;&#x000A;Next to the front left leg of the horse , you can see a an extinguishedbrazier.&#x000A;&#x000A;Next to the front right leg of the horse , you can see an extinguishedbrazier.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1028"/>
+    </children>
+  </item>
+  <item nodeId="node-1028">
+    <command xml:space="preserve">light hind left brazier</command>
+    <result xml:space="preserve">The hind right brazier lights itself, seemingly by magic.&#x000A;The front left brazier lights itself, seemingly by magic.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1029"/>
+    </children>
+  </item>
+  <item nodeId="node-1029">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Village Square&#x000A;Looking around you can see that the village is seen better days - its houses in disrepair, the roads overgrown, the people - barely present. The square, obviously once a lively place of culture and commerce, is now disused, only shattered remains of stalls and kiosks remaining.&#x000A;&#x000A;Dominating the view is a statue of a horse and rider, contorted into an unnatural pose, as if just hit by an enemy arrow. Several braziers are next to the statue. Perhaps lighting all of them may help?.&#x000A;&#x000A;Next to the hind left leg of the horse , you can see a lit brazier.&#x000A;&#x000A;Next to the hind right leg of the horse , you can see a lit brazier.&#x000A;&#x000A;Next to the front left leg of the horse , you can see a a litbrazier.&#x000A;&#x000A;Next to the front right leg of the horse , you can see an extinguishedbrazier.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1030"/>
+    </children>
+  </item>
+  <item nodeId="node-1030">
+    <command xml:space="preserve">light front right brazier</command>
+    <result xml:space="preserve">The hind right brazier extinguishes itself.&#x000A;The front left brazier extinguishes itself.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1031"/>
+    </children>
+  </item>
+  <item nodeId="node-1031">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Village Square&#x000A;Looking around you can see that the village is seen better days - its houses in disrepair, the roads overgrown, the people - barely present. The square, obviously once a lively place of culture and commerce, is now disused, only shattered remains of stalls and kiosks remaining.&#x000A;&#x000A;Dominating the view is a statue of a horse and rider, contorted into an unnatural pose, as if just hit by an enemy arrow. Several braziers are next to the statue. Perhaps lighting all of them may help?.&#x000A;&#x000A;Next to the hind left leg of the horse , you can see a lit brazier.&#x000A;&#x000A;Next to the hind right leg of the horse , you can see an extinguished brazier.&#x000A;&#x000A;Next to the front left leg of the horse , you can see a an extinguishedbrazier.&#x000A;&#x000A;Next to the front right leg of the horse , you can see a litbrazier.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1032"/>
+    </children>
+  </item>
+  <item nodeId="node-1032">
+    <command xml:space="preserve">light hind right brazier</command>
+    <result xml:space="preserve">The hind left brazier extinguishes itself.&#x000A;The front right brazier extinguishes itself.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1033"/>
+    </children>
+  </item>
+  <item nodeId="node-1033">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Village Square&#x000A;Looking around you can see that the village is seen better days - its houses in disrepair, the roads overgrown, the people - barely present. The square, obviously once a lively place of culture and commerce, is now disused, only shattered remains of stalls and kiosks remaining.&#x000A;&#x000A;Dominating the view is a statue of a horse and rider, contorted into an unnatural pose, as if just hit by an enemy arrow. Several braziers are next to the statue. Perhaps lighting all of them may help?.&#x000A;&#x000A;Next to the hind left leg of the horse , you can see an extinguished brazier.&#x000A;&#x000A;Next to the hind right leg of the horse , you can see a lit brazier.&#x000A;&#x000A;Next to the front left leg of the horse , you can see a an extinguishedbrazier.&#x000A;&#x000A;Next to the front right leg of the horse , you can see an extinguishedbrazier.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1034"/>
+    </children>
+  </item>
+  <item nodeId="node-1034">
+    <command xml:space="preserve">light front leg brazier</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1035"/>
+    </children>
+  </item>
+  <item nodeId="node-1035">
+    <command xml:space="preserve">light front left brazier</command>
+    <result xml:space="preserve">The hind left brazier lights itself, seemingly by magic.&#x000A;The front left brazier lights itself, seemingly by magic.&#x000A;The statue moves aside while also straightening its form to that of a rider and horse in a leisurely trot. The rumble raises a cloud of dust. After it subsides, a stairway leading down is revealed.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
