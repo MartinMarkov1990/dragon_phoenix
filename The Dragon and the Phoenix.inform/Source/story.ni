@@ -379,16 +379,16 @@ Instead of pushing the triangle plate:
 	otherwise:
 		say "Nothing seems to happen.".
 Instead of pushing the hexagon plate:
-	say "The plate slides backwards and falls down somewhere.";
+	say "The plate slides backwards and falls down somewhere. The stone door opens with a deep rumble.";
 	now the hexagon plate is nowhere;
 	now the stone door is open.
 The description of the Mausoleum is "The mausoleum hasn't seen daylight in years. Cobwebs are littered in the corners, and an assortment of old, dry bones are scattered around in the dust.". The tomb is a container in the mausoleum. The tomb is closed, openable and not lockable. "An ancient tomb covered by a stone plate is laying in the middle of the room.". The claw is in the tomb.
-At 12 pm:
-	If there are alive zombies in the graves:
+An every turn rule:
+	If time of day is 12 pm and there are alive zombies in the graves:
 		repeat with z running through all alive zombies in the graves:
-			now z is nowhere.
-At 3 pm:
-	If there are alive zombies not in the graves:
-		move a random alive zombie not in the graves to the graves;
-	If there are alive zombies not in the graves:
-		move a random alive zombie not in the graves to the graves.
+			now z is nowhere;
+	if time of day is 3 pm:
+		If there are alive zombies not in the graves:
+			move a random alive zombie not in the graves to the graves;
+		If there are alive zombies not in the graves:
+			move a random alive zombie not in the graves to the graves.
