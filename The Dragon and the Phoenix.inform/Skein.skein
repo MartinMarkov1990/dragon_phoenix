@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-126">
   <generator>Windows Inform 7 6M62</generator>
-  <activeNode nodeId="node-958"/>
+  <activeNode nodeId="node-970"/>
   <item nodeId="node-126">
     <command xml:space="preserve">The Dragon and the Phoenix</command>
-    <result xml:space="preserve">The Dragon and the Phoenix&#x000A;An Interactive Fiction by Martin Markov&#x000A;Release 1 / Serial number 180909 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Park&#x000A;You've been tugging at the end of your leash, but Mom's been holding you back the whole way.  Finally, you've reached the park. It is a beautiful day with neary a cloud roaming in the sky, and the park is full with people and other dogs.&#x000A;&#x000A;Mom pulls out your favourite chewed out tennis ball, and throws it. "Go fetch the ball, Drake!". The tennis ball rolls next to a large tree.&#x000A;&#x000A;Mom is waiting for you.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">The Dragon and the Phoenix&#x000A;An Interactive Fiction by Martin Markov&#x000A;Release 1 / Serial number 180909 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Park&#x000A;You've been tugging at the end of your leash, but Mom's been holding you back the whole way.  Finally, you've reached the park. (This is a tutorial, if you want to skip it, just wait.).It is a beautiful day with neary a cloud roaming in the sky, and the park is full with people and other dogs.&#x000A;&#x000A;Mom pulls out your favourite chewed out tennis ball, and throws it. "Go fetch the ball, Drake!". The tennis ball rolls next to a large tree.&#x000A;&#x000A;Mom is waiting for you.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <children>
       <child nodeId="node-127"/>
       <child nodeId="node-133"/>
@@ -388,12 +388,13 @@
   </item>
   <item nodeId="node-142">
     <command xml:space="preserve">get ball</command>
-    <result xml:space="preserve">"Now give me the ball, Dragon!"&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">"Now give me the ball, Drake!"&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <children>
       <child nodeId="node-143"/>
       <child nodeId="node-145"/>
+      <child nodeId="node-959"/>
     </children>
   </item>
   <item nodeId="node-143">
@@ -414,6 +415,111 @@
   <item nodeId="node-145">
     <command xml:space="preserve">give ball to mom</command>
     <result xml:space="preserve">Mom doesn't seem interested.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-959">
+    <command xml:space="preserve">give ball tomom</command>
+    <result xml:space="preserve">You can only do that to something animate.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-960"/>
+    </children>
+  </item>
+  <item nodeId="node-960">
+    <command xml:space="preserve">give ball to mom</command>
+    <result xml:space="preserve">"Good Boy!", says Mom, and gives you a treat. You gulp it immediately and wag your tail in delightA big white dog runs over to play with you.&#x000A;"It seems you've found a friend, Drake!. Go examine her!"&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-961"/>
+    </children>
+  </item>
+  <item nodeId="node-961">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Park&#x000A;It is a beautiful day with neary a cloud roaming in the sky, and the park is full with people and other dogs.&#x000A;&#x000A;Mom is waiting for you.&#x000A;&#x000A;You can also see a white dog here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-962"/>
+    </children>
+  </item>
+  <item nodeId="node-962">
+    <command xml:space="preserve">examine white dog</command>
+    <result xml:space="preserve">Actually a lovely dog-lady, a tad older and wiser than you, but still quite jovial and mischevious.&#x000A;&#x000A;"Now try smelling her, Drake."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-963"/>
+    </children>
+  </item>
+  <item nodeId="node-963">
+    <command xml:space="preserve">smell dog</command>
+    <result xml:space="preserve">In the time-honoured tradition of dogs, you smell each other's behinds. She's been eating fish.&#x000A;"Good, Drake! Now listen to her!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-964"/>
+    </children>
+  </item>
+  <item nodeId="node-964">
+    <command xml:space="preserve">listen to white dog</command>
+    <result xml:space="preserve">She barks at you happily. You wag your tail.&#x000A;"Why don't you tellher about something now?"&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-965"/>
+    </children>
+  </item>
+  <item nodeId="node-965">
+    <command xml:space="preserve">tell dog about birds</command>
+    <result xml:space="preserve">You bark at the white dog about nothing.&#x000A;"Very good! Now try going north, then looking around and going back south."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-966"/>
+    </children>
+  </item>
+  <item nodeId="node-966">
+    <command xml:space="preserve">tell dog about birds</command>
+    <result xml:space="preserve">You bark at the white dog about nothing.&#x000A;"Very good! Now try going north, then looking around and going back south."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-967"/>
+    </children>
+  </item>
+  <item nodeId="node-967">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Alley&#x000A;You find yourself into a small allery. People are coming or going to the park. The trees are fewer here, and the asphalt starts overwhelming the grass.&#x000A;&#x000A;A couple of sparrows have made their home in the crown of the willow, chirping happily while continuing work on their nest.&#x000A;&#x000A;A willow tree is dropping its branches over the alley.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-968"/>
+    </children>
+  </item>
+  <item nodeId="node-968">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Alley&#x000A;You find yourself into a small allery. People are coming or going to the park. The trees are fewer here, and the asphalt starts overwhelming the grass.&#x000A;&#x000A;A couple of sparrows have made their home in the crown of the willow, chirping happily while continuing work on their nest.&#x000A;&#x000A;A willow tree is dropping its branches over the alley.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-969"/>
+    </children>
+  </item>
+  <item nodeId="node-969">
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">"Good boy, Drake! Now, go do whatever you want. I'll be here, waiting."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-970"/>
+    </children>
+  </item>
+  <item nodeId="node-970">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">You played in the park for hours, dashing around the people and chasing the other dogs. When Mom finally brought you home, you were so tired you were not even able to have your dinner. You just fell in your bed in the flat's corridor, and doze off.&#x000A;&#x000A;Tavern&#x000A;In your sleep, you try rolling around in your bed. It feels surprusingly hard, and you wake up startled, next to a lit fireplace. You are in a large room with several long wooden tables with benches, and a bar. Next to it you can see a stairway leading down. A large oaken log is slowly burning in the fireplace, producing more heat than light. Shadows dance around the room, barely lighting the faces of the people here. &#x000A;&#x000A;Next to the far side of the bar, on the west side of the tavern, there is a green door with a circular window, apparently leading to the garden.&#x000A;&#x000A;A door made out of brown logs held together by metal rings is on the south wall. The coat rack and the welcome mat next to it suggest it is the front door.&#x000A;&#x000A;A surly, bald man stands behind the bar, absent-mindedly washing a glass with an extremely dirty cloth.&#x000A;&#x000A;A tall man wearing a long, gray cloak and eyepatch is sitting, cross-legged, next to the fire. He is carrying a long staff. Many silver hairs shimmer in his otherwise dark beard. A raven is sitting on his shoulder. He seems like a person that would be worthwile to listen to.&#x000A;&#x000A;Above the fireplace hangs a peculiar engraving of a bird that appears to be on fire. You notice that occasionally the tall man throws a look at it and appears very thoughtful.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>

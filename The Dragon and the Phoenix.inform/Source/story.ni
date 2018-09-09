@@ -157,9 +157,11 @@ item	hint
 
 Part 1 - In the park
 
-Park is a room. "[if park is unvisited]You've been tugging at the end of your leash, but Mom's been holding you back the whole way.  Finally, you've reached the park. [end if]It is a beautiful day with neary a cloud roaming in the sky, and the park is full with people and other dogs.".
+Park is a room. "[if park is unvisited]You've been tugging at the end of your leash, but Mom's been holding you back the whole way.  Finally, you've reached the park. [italic type](This is a tutorial, if you want to skip it, just [bold type]wait[italic type].).[roman type][end if]It is a beautiful day with neary a cloud roaming in the sky, and the park is full with people and other dogs.".
 The ball is here. "[one of]Mom pulls out your favourite chewed out tennis ball, and throws it. 'Go [bold type]fetch the ball[roman type], Drake!'. The tennis ball rolls next to a large tree.[or]Your favourite ball is sitting next to a large tree.[stopping]". 
 Mom is a person in the park.  "Mom is waiting for you."
+
+The white dog is an animal. The white dog can be known, smelled, heard, examined or unknown. The white dog is unknown. The description of the white dog is "Actually a lovely dog-lady, a tad older and wiser than you, but still quite jovial and mischevious.". The white dog is nowhere.
 
 Understand "fetch [something]" as taking.
 
@@ -168,7 +170,29 @@ After taking the ball:
 
 Instead of giving the ball to Mom:
 	move ball to Mom;
-	say "'Good Boy!', says Mom, and gives you a treat. You gulp it immediately and wag your tail in delight".
+	say "'Good Boy!', says Mom, and gives you a treat. You gulp it immediately and wag your tail in delight.";
+	now the white dog is in the park;
+	say "A big white dog runs over to play with you.";
+	say "'It seems you've found a friend, Drake!. Go [bold type]examine[roman type] her!'".
+	
+After examining the white dog when the white dog is unknown:
+	now the white dog is examined;
+	say "'Now try [bold type]smell[roman type]ing her, Drake.'";
+Instead of smelling the white dog when the white dog is examined:
+	say "In the time-honoured tradition of dogs, you smell each other's behinds. She's been eating fish.";
+	say "'Good, Drake! Now [bold type]listen[roman type] to her!";
+	now the white dog is smelled.
+Instead of listening to the white dog when the white dog is smelled:
+	say "She barks at you happily. You wag your tail.";
+	say "'Why don't you [bold type]tell[roman type] her about something now?'";
+	now the white dog is heard.
+Instead of telling the white dog about something when the the white dog is heard:
+	say "You bark at the white dog about [the second noun].";
+	say "'Very good! Now try [bold type]go[roman type]ing [bold type]north[roman type], then [bold type]look[roman type]ing around and [bold type]go[roman type]ing back [bold type]south[roman type].'";
+
+The Alley is north of the park. "You find yourself into a small allery. People are coming or going to the park. The trees are fewer here, and the asphalt starts overwhelming the grass.". The willow is a supporter in the alley. "A willow tree is dropping its branches over the alley." A birdhouse is on the willow. "A couple of sparrows have made their home in the crown of the willow, chirping happily while continuing work on their nest.".  The birdhouse is fixed in place. The willow is fixed in place. Understand "sparrow nest" as the birdhouse.
+After going to the park from the alley:
+	say "'Good boy, Drake! Now, go do whatever you want. I'll be here, [bold type]wait[roman type]ing.'".	
 	
 Instead of waiting or waiting more in the Park:
 	say "You played in the park for hours, dashing around the people and chasing the other dogs. When Mom finally brought you home, you were so tired you were not even able to have your dinner. You just fell in your bed in the flat's corridor, and doze off.";
