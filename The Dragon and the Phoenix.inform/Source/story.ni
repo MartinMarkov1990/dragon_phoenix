@@ -460,6 +460,30 @@ After burning the front left brazier:
 	if the front left brazier is lit and the front right brazier is lit and the hind left brazier is lit and the hind right brazier is lit:
 		say "With a deep rumble the statue moves aside while also straightening its form to that of a rider and horse in a leisurely trot. After the cloud of dust subsides, a stairway leading down is revealed.";
 		now the statue is open.
+The Sewer is down from the statue. "You would expect this sewer tunnel to be way damper. Somehow, however, it seems like the further on you go, the hotter it gets.".
+The wall of flame is a door. The wall of flame is north from the sewer. "[if closed]You see a wall made of still black flames at the north end of the sewer tunnel[otherwise]Nothing remains of the wall of flames, so you are free to move around[end if]." The wall of flame is closed, unopenable and not lockable. The recess is a container in the sewer. "[if wall of flame is closed]On the sewer wall next to the flames you see a small, oval recess.[otherwise]You can see the darkness of the recess next to where the wall of flame was.[end if]". The recess is open, unopenable and not lockable.
+The rat is an animal in the sewer. 
+The rathole is a container in the sewer. "There is a hole in the floor. A strong smell of rat emanates from it. Taking a peek inside, you can see a ruby shimmering at the bottom of it, just before the annoyed rat peeks out to stare at you." The rathole is open, unopenable, and not lockable. A ruby is in the rathole.
+Instead of giving the cheese to the rat:
+	say "The rat takes the cheese from you with its little ratty hands. It twitches its mustaches at you in gratitude and starts to eat.";
+	move the cheese to the rat.
+Instead of taking the ruby:
+	if the rat is not carrying the cheese:
+		say "The rat squeaks angrily at you. Perhaps you can give it something for the shiny?";
+	otherwise:
+		say "The rat doesn't like you poking around in its hole, but the cheese gift keeps it placated. You take the shiny thing.";
+		move the ruby to the player.
+Understand "shiny" or "shimmering" or "shimmering thing" as the ruby.
+Instead of asking the rat about "ruby" when the player is hearty:
+	say "The rat clearly understands. It swings around in its hole, then brings you the shiny thing.";
+	move the ruby to the player.
+Instead of inserting something which is not the ruby into the recess:
+	say "You don't think that's gonna fit.".
+After inserting the ruby into the recess:
+	say "The ruby slots perfectly. As soon as you put it in, the flames are extinguished, allowing you to proceed.";
+	now the wall of flame is open.
+
+
 	
 
 Part 6 - Graveyard
